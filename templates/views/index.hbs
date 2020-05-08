@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Weather </title>
+<link rel="stylesheet" href="/css/styles.css">
+
+{{!-- to fetch the forecast  --}}
+
+
+
+</head>
+
+<body>
+    <div class="main-content">
+        {{!-- this division is added to push the footer to the bottom of the page 
+        this div should contain all the page content excluding the footer to work. --}}
+        {{>header}}
+        <p>use this page to view the weather</p>
+        {{!-- <img src="/images/me.jpg"> --}}
+
+        <form>
+            <input placeholder="Location">
+            <button>
+                View Weather
+            </button>
+        </form>
+       
+        {{!-- script is placed at the end of the form because if it was placed in the beginning we wont be able to sue the html elements below the script.
+        in this case we are trying to access the form element, if we load the script before the form element there will be an error --}}
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+    </div>
+    {{>footer}}
+</body>
+ <script src="/js/app.js"></script>
+</html>
