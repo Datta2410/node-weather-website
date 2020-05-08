@@ -18,9 +18,9 @@ const messageTwo = document.querySelector('#message-2')//targets paragraph with 
 weatherForm.addEventListener('submit',(e)=>{//this function is fun when the button is clicked
     e.preventDefault()//prevents the browser from refreshing after the form is submitted
     messageOne.textContent="Loading.."
-    //console.log(search)
+    
     const location = search.value//gives us the value entered by the user
-    console.log(location)
+    
 
     //fetch function helps fetch a json response from the link given 
     //it helps us fetch data directly to the browser rather than the terminal
