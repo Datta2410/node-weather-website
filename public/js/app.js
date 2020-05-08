@@ -24,7 +24,7 @@ weatherForm.addEventListener('submit',(e)=>{//this function is fun when the butt
 
     //fetch function helps fetch a json response from the link given 
     //it helps us fetch data directly to the browser rather than the terminal
-    fetch('http://localhost:3000/weather?address='+ location).then((response)=>{
+    fetch('/weather?address='+ location).then((response)=>{
         //'then' method is used instead of the callback function for request.
             response.json().then((data)=>{
                 if(data.error){
